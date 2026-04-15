@@ -1,0 +1,44 @@
+.radar-map {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.radar-visualization {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Add visualization settings here */
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.control-button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.control-button:hover {
+    background-color: #004494;
+}
+
+@media (max-width: 600px) {
+    .radar-map {
+        height: 300px;
+    }
+    .controls {
+        flex-direction: column;
+    }
+}
